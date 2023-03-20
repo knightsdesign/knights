@@ -1,5 +1,6 @@
 "use client";
-import { linkButton } from "../components";
+
+import DialogContactForm from "../components/contact-form";
 
 const CTA = () => {
   return (
@@ -15,14 +16,11 @@ const CTA = () => {
             </p>
           </div>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:justify-center">
-            <a href="#" className={linkButton()}>
-              Contact us
-            </a>
+            <DialogContactForm />
           </div>
         </div>
       </div>
     </section>
   );
 };
-
 export default CTA;

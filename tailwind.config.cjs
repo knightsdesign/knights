@@ -10,6 +10,8 @@ const config = {
     require("@tailwindcss/typography"),
     // @ts-expect-error: No type defintion defined in the library
     require("windy-radix-typography"),
+    // @ts-expect-error: No type defintion defined in the library
+    require("tailwindcss-animate"),
   ],
 };
 

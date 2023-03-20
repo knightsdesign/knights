@@ -5,6 +5,7 @@ import Hero from "~/features/home/sections/hero";
 import Showcase from "~/features/home/sections/showcase";
 import Footer from "~/features/home/sections/footer";
 import CTA from "~/features/home/sections/cta";
+import Team from "~/features/home/sections/team";
 
 import { SpraySVG3 } from "~/features/home/components";
 
@@ -24,6 +25,7 @@ export default function HomePage() {
         <Hero />
       </div>
       <Showcase />
+      <Team />
       <CTA />
       <Footer />
     </>

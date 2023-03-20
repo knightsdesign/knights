@@ -1,7 +1,7 @@
 "use client";
 
 import { BlackBox } from "~/features/home/components";
-import { linkButton } from "../components";
+import DialogContactForm from "../components/contact-form";
 
 const Hero = () => {
   return (
@@ -11,18 +11,16 @@ const Hero = () => {
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
             <div className="relative m-auto items-center gap-12 md:order-first lg:inline-flex">
               <div className="max-w-xl text-center lg:text-left">
-                <div>
+                <div className="prose prose-sand">
                   <p className="text-2xl font-medium tracking-tighter text-sand-12 sm:text-4xl">
                     Creative Design Agency
                   </p>
-                  <p className="mt-4 max-w-xl text-base tracking-tight text-sand-10">
-                    {`Most chess pieces take 10 minutes to build. The knight takes at least 2 hours. That's how we design and build.`}
+                  <p className="mt-4 max-w-xl whitespace-pre text-base tracking-tight text-sand-10">
+                    {`Most chess pieces take 10 minutes to build.\nExcept the knight which takes 2 hours.\nWe build knights quality web apps`}
                   </p>
                 </div>
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                  <a href="#" className={linkButton()}>
-                    Contact us
-                  </a>
+                  <DialogContactForm />
                 </div>
               </div>
             </div>

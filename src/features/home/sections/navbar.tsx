@@ -32,11 +32,7 @@ const Navbar = () => {
           <Menu className="h-6 w-6" />
         </button>
       </div>
-      <nav
-        className={`${
-          open ? "flex" : "hidden"
-        } flex-grow flex-col py-4 md:flex md:flex-row md:justify-center lg:py-0`}
-      >
+      <nav className={`${open ? "flex" : "hidden"} flex-grow flex-col py-4 `}>
         <ul className="list-none space-y-2 md:inline-flex md:items-center md:gap-x-8 md:space-y-0 ">
           <li>
             <a href="#showcase" className={link()}>
