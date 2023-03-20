@@ -4,9 +4,9 @@ import { BlackBox } from "~/features/home/components";
 
 const Showcase = () => {
   return (
-    <section className="flex w-full items-center bg-white">
+    <section id="showcase" className="flex w-full items-center bg-sand-1">
       <div className="relative mx-auto w-full max-w-7xl items-center px-5 py-24 md:px-12 lg:px-16">
-        <p className="text-2xl font-medium tracking-tighter text-black sm:text-4xl">
+        <p className="text-2xl font-medium tracking-tighter text-sand-12 sm:text-4xl">
           Showcase
         </p>
 
@@ -16,7 +16,7 @@ const Showcase = () => {
               <BlackBox />
             </div>
 
-            <p className="mt-5 text-lg font-medium leading-6 text-black">
+            <p className="mt-5 text-lg font-medium leading-6 text-sand-12">
               Pink dreams
             </p>
             <p className="mt-3 text-base text-gray-500">
@@ -25,7 +25,7 @@ const Showcase = () => {
             </p>
             <div className="justify-left mt-10 flex gap-3">
               <a
-                className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
+                className="inline-flex items-center justify-center text-sm font-semibold text-sand-12 duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
                 href="#"
               >
                 <span>Read more</span>
@@ -37,7 +37,7 @@ const Showcase = () => {
               <BlackBox />
             </div>
 
-            <p className="mt-5 text-lg font-medium leading-6 text-black">
+            <p className="mt-5 text-lg font-medium leading-6 text-sand-12">
               Lavender ender
             </p>
             <p className="mt-3 text-base text-gray-500">
@@ -46,11 +46,11 @@ const Showcase = () => {
             </p>
             <div className="justify-left mt-10 flex gap-3">
               <a
-                className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
+                className="inline-flex items-center justify-center text-sm font-semibold text-sand-12 duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
                 href="#"
               >
                 <span>Read more</span>
-              </a>{" "}
+              </a>
             </div>
           </figure>
           <figure>

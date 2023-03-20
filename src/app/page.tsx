@@ -6,6 +6,8 @@ import Showcase from "~/features/home/sections/showcase";
 import Footer from "~/features/home/sections/footer";
 import CTA from "~/features/home/sections/cta";
 
+import { SpraySVG3 } from "~/features/home/components";
+
 export const metadata: Metadata = {
   title: "Knights",
   description: "Creative Web Agency",
@@ -14,8 +16,13 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className="relative mx-auto mb-12 w-full bg-sand-1 2xl:max-w-7xl">
+        <div className="absolute left-0 top-0">
+          <SpraySVG3 />
+        </div>
+        <Navbar />
+        <Hero />
+      </div>
       <Showcase />
       <CTA />
       <Footer />

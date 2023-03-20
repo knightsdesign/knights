@@ -13,6 +13,7 @@
     "@react-three/drei": "^9.57.3",
     "@react-three/fiber": "^8.12.0",
     "@types/three": "^0.149.0",
+    "cva": "npm:class-variance-authority@^0.4.0",
     "lucide-react": "^0.125.0",
     "next": "^13.2.1",
     "react": "18.2.0",
