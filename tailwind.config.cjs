@@ -4,7 +4,13 @@ const config = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // @ts-expect-error: No type defintion defined in the library
+    require("windy-radix-palette"),
+    require("@tailwindcss/typography"),
+    // @ts-expect-error: No type defintion defined in the library
+    require("windy-radix-typography"),
+  ],
 };
 
 module.exports = config;
