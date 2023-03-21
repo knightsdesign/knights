@@ -30,7 +30,7 @@ const ShowcasePostPage = ({ params }: ShowcasePostPage) => {
 
   return (
     <>
-      <Breadcrumb items={getBreadcrumbs(post?.slug)} />
+      <Breadcrumb items={getBreadcrumbs(post?.slug as string)} />
     </>
   );
 };

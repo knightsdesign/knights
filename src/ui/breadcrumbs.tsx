@@ -69,7 +69,7 @@ export function getBreadcrumbs(path: string): Item[] {
   let href = "";
 
   for (let i = 0; i < parts.length; i++) {
-    const part = parts[i];
+    const part = parts[i] as string;
     href += `/${part}`;
     const title =
       part.replace(/-/g, " ").charAt(0).toUpperCase() +
