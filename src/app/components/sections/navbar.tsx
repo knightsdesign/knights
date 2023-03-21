@@ -23,7 +23,9 @@ const Navbar = () => {
           className="text-lg uppercase tracking-tight text-sand-12 focus:outline-none focus:ring lg:text-2xl"
           href="/"
         >
-          <span className="uppecase focus:ring-0 lg:text-lg">knights</span>
+          <span className="uppecase focus:ring-0 lg:text-lg">
+            knights design studio
+          </span>
         </Link>
         <button
           onClick={() => setOpen(!open)}
