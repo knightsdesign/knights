@@ -16,7 +16,7 @@ const Team = () => {
     <section>
       <div className="mx-auto w-full max-w-7xl items-center px-5 py-24 md:px-12 lg:px-16">
         <div className="mb-12 md:pr-12 lg:pr-24">
-          <h2 className="text-4xl text-black">Our team</h2>
+          <h2 className="text-4xl text-sand-12">Our team</h2>
         </div>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
           <div className="lg:col-span-2">
@@ -34,13 +34,13 @@ const Team = () => {
                     alt="Profile picture of Amr"
                   />
                   <div className="space-y-1">
-                    <h3 className="text-lg font-medium leading-6 text-black">
+                    <h3 className="text-lg font-medium leading-6 text-sand-12">
                       Amr Hossam
                     </h3>
-                    <p className="text-base text-gray-500">
+                    <p className="text-sm text-sand-10">
                       Handsome model that 3D models
                     </p>
-                    <div className="flex h-8 gap-4">
+                    <div className="flex h-8 gap-4 pt-4">
                       <SiTypescript className="h-8 w-8" />
                       <SiBlender className="h-8 w-8" />
                       <SiThreedotjs className="h-8 w-8" />
@@ -56,16 +56,18 @@ const Team = () => {
                     src="/kevin.png"
                     width={100}
                     height={100}
+                    loading="lazy"
+                    blurDataURL=""
                     alt="Profile picture of Kevin"
                   />
                   <div className="space-y-1">
-                    <h3 className="text-lg font-medium leading-6 text-black">
+                    <h3 className="text-lg font-medium leading-6 text-sand-12">
                       Kevin Nguyen
                     </h3>
-                    <p className="text-base text-gray-500">
+                    <p className="text-sm text-sand-10">
                       Fully-stacked in the wrong places
                     </p>
-                    <div className="flex h-8 gap-4">
+                    <div className="flex h-8 gap-4 pt-4">
                       <SiTypescript className="h-8 w-8" />
                       <SiNextdotjs className="h-8 w-8" />
                       <SiTailwindcss className="h-8 w-8" />
