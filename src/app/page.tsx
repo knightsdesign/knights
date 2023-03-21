@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import Navbar from "~/features/home/sections/navbar";
-import Hero from "~/features/home/sections/hero";
-import Showcase from "~/features/home/sections/showcase";
-import Footer from "~/features/home/sections/footer";
-import CTA from "~/features/home/sections/cta";
-import Team from "~/features/home/sections/team";
+import Navbar from "~/app/components/sections/navbar";
+import Hero from "~/app/components/sections/hero";
+import Showcase from "~/app/components/sections/showcase";
+import Footer from "~/app/components/sections/footer";
+import CTA from "~/app/components/sections/cta";
+import Team from "~/app/components/sections/team";
 
-import { SpraySVG3 } from "~/features/home/components";
+import { SpraySVG3 } from "~/app/components";
 
 export const metadata: Metadata = {
   title: "Knights",

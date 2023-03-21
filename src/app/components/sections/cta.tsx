@@ -1,6 +1,6 @@
 "use client";
 
-import DialogContactForm from "../components/contact-form";
+import DialogContactForm from "../contact-form";
 
 const CTA = () => {
   return (

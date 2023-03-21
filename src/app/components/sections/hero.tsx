@@ -1,7 +1,7 @@
 "use client";
 
-import { BlackBox } from "~/features/home/components";
-import DialogContactForm from "../components/contact-form";
+import { BlackBox } from "~/app/components";
+import DialogContactForm from "../contact-form";
 
 const Hero = () => {
   return (

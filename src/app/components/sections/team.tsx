@@ -40,7 +40,7 @@ const Team = () => {
                     <p className="text-sm text-sand-10">
                       Handsome model that 3D models
                     </p>
-                    <div className="flex h-8 gap-4 pt-4">
+                    <div className="flex h-8 gap-4 pt-4 text-sand-12">
                       <SiTypescript className="h-8 w-8" />
                       <SiBlender className="h-8 w-8" />
                       <SiThreedotjs className="h-8 w-8" />
@@ -67,7 +67,7 @@ const Team = () => {
                     <p className="text-sm text-sand-10">
                       Fully-stacked in the wrong places
                     </p>
-                    <div className="flex h-8 gap-4 pt-4">
+                    <div className="flex h-8 gap-4 pt-4 text-sand-12">
                       <SiTypescript className="h-8 w-8" />
                       <SiNextdotjs className="h-8 w-8" />
                       <SiTailwindcss className="h-8 w-8" />

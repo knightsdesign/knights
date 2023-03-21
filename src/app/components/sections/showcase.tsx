@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BlackBox } from "~/features/home/components";
+import { BlackBox } from "~/app/components";
 import { allShowcasePosts } from "contentlayer/generated";
 
 const Showcase = () => {
@@ -9,9 +9,12 @@ const Showcase = () => {
   return (
     <section id="showcase" className="flex w-full items-center bg-sand-1">
       <div className="relative mx-auto w-full max-w-7xl items-center px-5 py-24 md:px-12 lg:px-16">
-        <p className="text-2xl font-medium tracking-tighter text-sand-12 sm:text-4xl">
+        <a
+          href="/showcases"
+          className="text-2xl font-medium tracking-tighter text-sand-12 sm:text-4xl"
+        >
           Showcase
-        </p>
+        </a>
 
         <div className="grid grid-cols-2 gap-6 py-12 md:grid-cols-3">
           {blogPosts.map((blog) => (

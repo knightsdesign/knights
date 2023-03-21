@@ -1,5 +1,6 @@
 import { allShowcasePosts } from "contentlayer/generated";
 
+import { Breadcrumb, getBreadcrumbs } from "~/ui";
 type ShowcasePostPage = {
   params: {
     slug: string[];
@@ -26,8 +27,12 @@ function getPostFromParams(params: ShowcasePostPage["params"]) {
 
 const ShowcasePostPage = ({ params }: ShowcasePostPage) => {
   const post = getPostFromParams(params);
-  console.log({ post, params });
-  return <>Post</>;
+
+  return (
+    <>
+      <Breadcrumb items={getBreadcrumbs(post?.slug)} />
+    </>
+  );
 };
 
 export default ShowcasePostPage;
