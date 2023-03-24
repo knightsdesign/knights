@@ -31,6 +31,11 @@ export const BlogPost = defineDocumentType(() => ({
       description: "The date of the post",
       required: true,
     },
+    author: {
+      type: "string",
+      description: "The author of the post",
+      required: true,
+    },
   },
   computedFields,
 }));
@@ -53,6 +58,16 @@ export const ShowcasePost = defineDocumentType(() => ({
     date: {
       type: "date",
       description: "The date of the post",
+      required: true,
+    },
+    author: {
+      type: "string",
+      description: "The author of the post",
+      required: true,
+    },
+    authorImg: {
+      type: "string",
+      description: "The image of the author",
       required: true,
     },
   },

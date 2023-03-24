@@ -24,7 +24,7 @@ const Navbar = () => {
           href="/"
         >
           <span className="uppecase focus:ring-0 lg:text-lg">
-            knights design studio
+            KNIGHTS DESIGN STUDIO
           </span>
         </Link>
         <button
@@ -34,12 +34,21 @@ const Navbar = () => {
           <Menu className="h-6 w-6" />
         </button>
       </div>
-      <nav className={`${open ? "flex" : "hidden"} flex-grow flex-col py-4 `}>
-        <ul className="list-none space-y-2 md:inline-flex md:items-center md:gap-x-8 md:space-y-0 ">
+      <nav
+        className={`${
+          open ? "flex" : "hidden"
+        } flex-grow flex-col justify-center py-4 md:flex`}
+      >
+        <ul className="list-none space-y-2 md:ml-8 md:inline-flex md:items-center md:gap-x-8 md:space-y-0 ">
           <li>
-            <a href="#showcase" className={link()}>
+            <Link href="/showcases" className={link()}>
               Showcase
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blogs" className={link()}>
+              Blog
+            </Link>
           </li>
         </ul>
       </nav>

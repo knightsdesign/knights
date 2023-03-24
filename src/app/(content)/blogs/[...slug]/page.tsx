@@ -1,24 +1,23 @@
-import { allShowcasePosts } from "contentlayer/generated";
-
+import { allBlogPosts } from "contentlayer/generated";
 import { Breadcrumb, getBreadcrumbs } from "~/ui";
 
 import { Mdx } from "~/app/(content)/components";
 
-type ShowcasePostPage = {
+type BlogPostPage = {
   params: {
     slug: string[];
   };
 };
 
-export function generateStaticParams(): ShowcasePostPage["params"][] {
-  return allShowcasePosts.map((post) => ({
+export function generateStaticParams(): BlogPostPage["params"][] {
+  return allBlogPosts.map((post) => ({
     slug: post.slugAsParams.split("/"),
   }));
 }
 
-function getPostFromParams(params: ShowcasePostPage["params"]) {
+function getPostFromParams(params: BlogPostPage["params"]) {
   const slug = params?.slug?.join("/");
-  const post = allShowcasePosts.find((post) => post.slugAsParams === slug);
+  const post = allBlogPosts.find((post) => post.slugAsParams === slug);
 
   if (!post) {
     null;
@@ -27,7 +26,7 @@ function getPostFromParams(params: ShowcasePostPage["params"]) {
   return post;
 }
 
-const ShowcasePostPage = ({ params }: ShowcasePostPage) => {
+const ShowcasePostPage = ({ params }: BlogPostPage) => {
   const post = getPostFromParams(params);
 
   return (
