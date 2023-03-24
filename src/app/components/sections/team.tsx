@@ -35,7 +35,7 @@ const Team = () => {
                   />
                   <div className="space-y-1">
                     <h3 className="text-lg font-medium leading-6 text-sand-12">
-                      Amr Hossam
+                      Amr Hamdy
                     </h3>
                     <p className="text-sm text-sand-10">
                       Handsome model that 3D models
