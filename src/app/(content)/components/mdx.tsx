@@ -102,6 +102,7 @@ const components: MDXComponents = {
     <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
   ),
   ol: ({ className, ...props }) => (
+    // @ts-expect-error: String should work
     <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
   ),
   li: ({ className, ...props }) => (
