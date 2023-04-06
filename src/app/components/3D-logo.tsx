@@ -12,14 +12,11 @@ type GLTFResult = GLTF & {
     Ears: THREE.Mesh;
     Eyes: THREE.Mesh;
   };
-  materials: {};
 };
 
 export function Model(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
-  const { nodes, materials } = useGLTF(
-    "/fullbody-logo-rigged-posed.glb"
-  ) as GLTFResult;
+  const { nodes } = useGLTF("/fullbody-logo-rigged-posed.glb") as GLTFResult;
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
