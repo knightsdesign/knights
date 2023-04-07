@@ -34,6 +34,7 @@ const Navbar = () => {
           <Menu className="h-6 w-6" />
         </button>
       </div>
+      {/*
       <nav
         className={`${
           open ? "flex" : "hidden"
@@ -52,6 +53,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+			*/}
     </div>
   );
 };

@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { BlackBox } from "~/app/components";
 import { allShowcasePosts } from "contentlayer/generated";
+import Image from "next/image";
 
 const Showcase = () => {
   const blogPosts = allShowcasePosts;
@@ -19,10 +19,12 @@ const Showcase = () => {
         <div className="grid grid-cols-2 gap-6 py-12 md:grid-cols-3">
           {blogPosts.map((blog) => (
             <figure key={blog._id}>
-              <div className="h-40 w-full sm:h-80">
-                <BlackBox />
-              </div>
-
+              <Image
+                src="https://picsum.photos/seed/696/3000/2000"
+                alt="Showcase"
+                width={300}
+                height={400}
+              />
               <p className="mt-5 text-lg font-medium leading-6 text-sand-12">
                 {blog.title}
               </p>

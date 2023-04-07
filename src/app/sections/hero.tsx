@@ -1,7 +1,6 @@
 "use client";
 
-import { BlackBox } from "~/app/components";
-import DialogContactForm from "../contact-form";
+import { BlackBox, linkButton } from "~/components";
 
 const Hero = () => {
   return (
@@ -20,7 +19,12 @@ const Hero = () => {
                   </p>
                 </div>
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                  <DialogContactForm />
+                  <a
+                    className={linkButton()}
+                    href="mailto:contact@knightsdesign.studio"
+                  >
+                    Contact Us
+                  </a>
                 </div>
               </div>
             </div>

@@ -64,9 +64,7 @@ const Team = () => {
                     <h3 className="text-lg font-medium leading-6 text-sand-12">
                       Kevin Nguyen
                     </h3>
-                    <p className="text-sm text-sand-10">
-                      Fully-stacked in the wrong places
-                    </p>
+                    <p className="text-sm text-sand-10">Modern day webmaster</p>
                     <div className="flex h-8 gap-4 pt-4 text-sand-12">
                       <SiTypescript className="h-8 w-8" />
                       <SiNextdotjs className="h-8 w-8" />

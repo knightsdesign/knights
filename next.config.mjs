@@ -9,6 +9,16 @@ import { withContentlayer } from "next-contentlayer";
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        hostname: "picsum.photos",
+        pathname: "/**",
+        port: "",
+        protocol: "https",
+      },
+    ],
+  },
   experimental: {
     appDir: true,
   },

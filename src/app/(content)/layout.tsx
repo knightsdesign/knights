@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 import "tailwindcss/tailwind.css";
 import { ScrollArea } from "~/ui/scroll-area";
 
-import Footer from "~/app/components/sections/footer";
-import Navbar from "~/app/components/sections/navbar";
+import Footer from "~/app/sections/footer";
+import Navbar from "~/app/sections/navbar";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
